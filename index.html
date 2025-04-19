@@ -1,131 +1,116 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beranda AWM TOUR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-    <link rel = "stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <!-- navbar-->
-    <!-- {{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> --}} -->
-      <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="/">
-            <!-- <img src="{{ asset('img/logo-awm.png') }}" height="50px" alt=""> -->
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Beranda</a>
-              </li>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Saya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Paket
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/paket">Katalog Paket</a></li>
-                  <li><a class="dropdown-item" href="/metode-transaksi">Metode Transaksi</a></li>
-                </ul>
-              </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link active" href="/about" role="button">
-                  Tentang Kami
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/article">Artikel</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
-              </li>
-            </ul>
-          </div>
+  <!-- Hero Section -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Halo, Saya Ahmad Riqas</h1>
+      <p class="lead">Fresh Graduate | Self-Taught SQL Beginner | Completed Mini SQL Project | Driven to Learn Data Analytics for Business Impact</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Tentang Saya</h2>
+      <p>Experienced as Math Lab Assistant at UIN Alauddin Makassar, web developer at PT. Al Ikhlas WIsata Mandiri
+
+        Currently passionate about data analysis and business insights. Self-trained in SQL and have practiced using data querying to extract meaningful insights from mock datasets. Strong interest in data-driven decision-making.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Keahlian</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <h5>SQL</h5>
+          <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
         </div>
-      </nav>
-      <section id="hor-blok"></section>
-      <!-- {{-- <div class="container" style="background-color: aqua; height:100px; width:100%"></div> --}} -->
-    <!-- End navbar-->
-    <style>
-        .card-img-top {
-        width: 100%; /* Mengatur lebar gambar agar sesuai dengan container */
-        height: 200px; /* Tetapkan tinggi gambar */
-        object-fit: cover; /* Mencrop gambar agar sesuai dengan ukuran yang ditentukan */
-        border-radius: 10px; /* Membuat sudut-sudut gambar menjadi bulat */
-      }
-      </style>
-          <!-- hero-->
-            <section id="hero">
-              <div class="container text-left py-5"> 
-                <div class="text-super-besar barlow text-putih fw-bold mb-2">PT. Al Ikhlas Wisata Mandiri</div>
-                  <div class="text-normal nunito text-putih mb-5">
-                  Travel umrah terpercaya yang telah memberangkatkan para jamaah 
-                  <br />
-                  Haji dan  Umrah
-                </div>
-              </div>
-            </section>
-          <!-- end hero-->
+        <div class="col-md-3">
+          <h5>Laravel</h5>
+          <div class="progress"><div class="progress-bar bg-success" style="width: 75%;">75%</div></div>
+        </div>
+        <div class="col-md-3">
+          <h5>HTML/CSS</h5>
+          <div class="progress"><div class="progress-bar bg-info" style="width: 90%;">90%</div></div>
+        </div>
+        <div class="col-md-3">
+          <h5>R</h5>
+          <div class="progress"><div class="progress-bar bg-warning" style="width: 70%;">70%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- services -->>
-        <section id="services" class="py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="text-besar barlow text-hitam fw-bold mb-2"> Mengapa harus memilih kami?
-                  
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="d-flex align-items-center mb-4">
-                        <img src="img/verif.png" height="50"  alt="">
-                        <div class="ms-3">
-                          <div class="text-normal nunito text-hitam fw-bold"> Terpercaya </div>
-                          <div class="text-kecil nunito text-hitam"> Resmi terdaftar di Kementrian Agama Republik Indonesia dengan <a href="https://umrahcerdas.kemenag.go.id/home/detail/1029" class="text-decoration-none" rel="noopener" target="blank">Izin PPIU Kemenag RI U.7 2022</a> </div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-items-center mb-4">
-                        <img src="img/quran.png" height="50"  alt="">
-                        <div class="ms-3">
-                          <div class="text-normal nunito text-hitam fw-bold"> Sesuai Syariat Islam </div>
-                          <div class="text-kecil nunito text-hitam"> Tiap tiap rangkaian kegiatan insya Allah sesuai dengan tuntunan Al-Qur'an dan As-Sunnah </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="d-flex align-items-center mb-4">
-                        <img src="img/man.png" height="70"  alt="">
-                        <div class="ms-3">
-                          <div class="text-normal nunito text-hitam fw-bold"> Pembimbing Profesional & Berpengalaman </div>
-                          <div class="text-kecil nunito text-hitam"> InsyaAllah akan dibimbing dengan Pembimbing yang amanah dan berpengalaman</div>
-                        </div>
-                      </div>
-                      <div class="d-flex align-items-center mb-4">
-                        <img src="img/hotel.png" height="50"  alt="">
-                        <div class="ms-3">
-                          <div class="text-normal nunito text-hitam fw-bold"> Fasilitas Terbaik </div>
-                          <div class="text-kecil nunito text-hitam"> Kami menyediakan fasilitas terbaik dengan harga terjangkau </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Proyek</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 1">
+            <div class="card-body">
+              <h5 class="card-title">Analisis Data Penjualan</h5>
+              <p class="card-text">//description coming soon//</p>
             </div>
           </div>
-        </section>
-        <!-- end services -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 2">
+            <div class="card-body">
+              <h5 class="card-title">Website AWM TOUR</h5>
+              <p class="card-text">//description coming soon//</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Kontak</h2>
+      <p>Silakan hubungi saya melalui email: <strong>ahmadriqas99@gmail.com</strong> atau melalui LinkedIn.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 Ahmad Riqas. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
