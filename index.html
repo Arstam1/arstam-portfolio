@@ -6,20 +6,17 @@
     <title>Portofolio Saya</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <!-- <ul class="navbar-nav flex-row d-md-none"> -->
-        <!-- <li class="nav-item text-nowrap"> -->
-        <!-- Toggle Button (Visible only on mobile) -->
         <button class="btn btn-outline-secondary d-md-none m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Toggle navigation">
           <i class="bi bi-list"></i>
         </button>
 
         <!-- Sidebar/Offcanvas -->
         <div class="offcanvas offcanvas-start bg-body-tertiary d-md-flex" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
-          <!-- Title (Hidden in md-up) -->
           <div class="offcanvas-header d-md-none">
             <h5 class="offcanvas-title text-success" id="sidebarMenuLabel">ARSTAM</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -27,27 +24,25 @@
 
           <!-- Sidebar Content -->
           <div class="d-flex flex-column flex-shrink-0 p-0 vh-100 w-100">
-            <!-- Title for md and up -->
             <h5 class="text-center text-success d-none d-md-block my-3">ARSTAM</h5>
-
             <!-- Profile Picture -->
             <img src="img/ppcircle.png" class="rounded-circle d-block mx-auto" height="120" alt="Profile" />
 
             <!-- Social Media Icons -->
             <div class="d-flex justify-content-center my-3 gap-2">
-              <a href="https://instagram.com" target="_blank">
+              <a href="https://instagram.com/arstam1" target="_blank">
                 <img src="img/ig.png" alt="Instagram" height="28px" />
               </a>
-              <a href="https://wa.me/6281234567890" target="_blank">
+              <a href="https://wa.me/6285757245400" target="_blank">
                 <img src="img/whatsapp.png" alt="WhatsApp" height="28px" />
               </a>
-              <a href="https://github.com/yourusername" target="_blank">
+              <a href="https://github.com/Arstam1" target="_blank">
                 <img src="img/github.png" alt="GitHub" height="28px" />
               </a>
-              <a href="https://facebook.com/yourusername" target="_blank">
+              <a href="https://facebook.com/ahmadriqas" target="_blank">
                 <img src="img/fesnuk.png" alt="Facebook" height="28px" />
               </a>
-              <a href="https://linkedin.com" target="_blank">
+              <a href="https://linkedin.com/in/ahmad-riqas-869b0534a/" target="_blank">
                 <img src="img/linkedin.png" alt="LinkedIn" height="28px" />
               </a>
             </div>
@@ -74,24 +69,6 @@
           </div>
         </div>
 
-        <!-- CSS untuk mengatur tampilan di desktop -->
-        <style>
-          @media (min-width: 768px) {
-            .offcanvas.offcanvas-start.d-md-flex {
-              transform: none !important;
-              visibility: visible !important;
-              position: fixed !important;
-              top: 0 !important;
-              left: 0 !important;
-              width: 17% !important;
-              height: 100vh !important;
-              border-right: 1px solid rgba(0, 0, 0, 0.1);
-            }
-          }
-        </style>
-
-        <!-- Hero Section -->
-
         <main id="home" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
           <!-- <header class="bg-primary text-white text-center py-5">
             <div class="container">
@@ -100,22 +77,23 @@
             </div>
           </header> -->
 
-          <!-- About Section -->
           <div class="container">
             <div class="row">
               <div class="col-5 d-flex justify-content-center">
                 <img src="img/Picture1.jpg" class="img-fluid justify-content-center" alt="mypic" />
               </div>
               <div class="col-6 my-auto">
-                <h2 class="mb-4">
+                <h1>
                   AHMAD RIQAS
                   <br />
+                </h1>
+                <h2 class="mb-4">
                   <span class="text-success">DATA ANALYSIS</span> ENTHUSIAST
                   <br />
                   & <span class="text-success">WEB</span> DEVELOPER
                 </h2>
                 <p class="text-muted">
-                  Experienced as Math Lab Assistant at UIN Alauddin Makassar, web developer at PT. Al Ikhlas WIsata Mandiri Currently passionate about data analysis and business insights. Self-trained in SQL and have practiced using data
+                  Experienced as Math Lab Assistant at UIN Alauddin Makassar, web developer at PT. Al Ikhlas WIsata Mandiri. Currently passionate about data analysis and business insights. Self-trained in SQL and have practiced using data
                   querying to extract meaningful insights from mock datasets. Strong interest in data-driven decision-making.
                 </p>
               </div>
@@ -142,6 +120,13 @@
                 <li>Supervising students during practical sessions</li>
               </ul>
             </div>
+            <div class="mb-4">
+              <h5 class="text-muted">January 2024 - Present</h5>
+              <p>IT Division, PT. Al Ikhlas Wisata Mandiri</p>
+              <ul class="text-normal nunito text-hitam">
+                <li>Built a web-based information system to enhance information accessibility & data management for a pilgrimage service.</li>
+              </ul>
+            </div>
           </div>
         </section>
         <section id="projects" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
@@ -154,8 +139,9 @@
                   <div class="card">
                     <img src="img/proyek2.png" class="card-img-top" alt="Proyek 1" />
                     <div class="card-body">
-                      <h5 class="card-title">Data Analysis Mini Course by RevoU</h5>
-                      <p class="card-text">//description coming soon//</p>
+                      <h5 class="card-title">Sales Data Analytics Project</h5>
+                      <p class="card-text">A data analysis mini-project assigned by RevoU. The objective was to extract actionable insights by executing SQL queries against business datasets.</p>
+                      <a href="https://shorturl.at/W2DTc" class="btn btn-info">Preview</a>
                     </div>
                   </div>
                 </div>
@@ -163,8 +149,9 @@
                   <div class="card">
                     <img src="img/proyek1.png" class="card-img-top" alt="Proyek 2" />
                     <div class="card-body">
-                      <h5 class="card-title">Website AWM TOUR</h5>
-                      <p class="card-text">//description coming soon//</p>
+                      <h5 class="card-title">Web-Based Hajj & Umrah Management System</h5>
+                      <p class="card-text">This application was developed to streamline information access and operational data management for Islamic pilgrimage tourism businesses.</p>
+                      <a href="https://awmtour.com" class="btn btn-info">Preview</a>
                     </div>
                   </div>
                 </div>
@@ -177,22 +164,32 @@
             <h4 class="text-success fw-bold mb-4 text-center">CONTACT</h4>
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
-                  <a href="https://instagram.com" target="_blank">
-                    <img src="img/ig.png" alt="Instagram" height="50px" />
-                  </a>
-                  <a href="https://instagram.com" target="_blank">
-                    <img src="img/ig.png" alt="Instagram" height="50px" />
-                  </a>
-                  <a href="https://instagram.com" target="_blank">
-                    <img src="img/ig.png" alt="Instagram" height="50px" />
-                  </a>
-                  <a href="https://instagram.com" target="_blank">
-                    <img src="img/ig.png" alt="Instagram" height="50px" />
-                  </a>
-                  <a href="https://instagram.com" target="_blank">
-                    <img src="img/ig.png" alt="Instagram" height="50px" />
-                  </a>
+                <div class="row row-cols-2 row-cols-lg-5 text-center">
+                  <div class="col">
+                    <a href="https://instagram.com/arstam1" target="_blank">
+                      <img src="img/ig.png" alt="Instagram" height="65px" />
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://wa.me/6285757245400" target="_blank">
+                      <img src="img/whatsapp.png" alt="WhatsApp" height="65px" />
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://github.com/Arstam1" target="_blank">
+                      <img src="img/github.png" alt="GitHub" height="65px" />
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://facebook.com/ahmadriqas" target="_blank">
+                      <img src="img/fesnuk.png" alt="Facebook" height="65px" />
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="https://linkedin.com/in/ahmad-riqas-869b0534a/" target="_blank">
+                      <img src="img/linkedin.png" alt="LinkedIn" height="65px" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
