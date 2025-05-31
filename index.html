@@ -1,116 +1,206 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio Saya</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Portofolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Halo, Saya Ahmad Riqas</h1>
-      <p class="lead">Fresh Graduate | Self-Taught SQL Beginner | Completed Mini SQL Project | Driven to Learn Data Analytics for Business Impact</p>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Tentang Saya</h2>
-      <p>Experienced as Math Lab Assistant at UIN Alauddin Makassar, web developer at PT. Al Ikhlas WIsata Mandiri
-
-        Currently passionate about data analysis and business insights. Self-trained in SQL and have practiced using data querying to extract meaningful insights from mock datasets. Strong interest in data-driven decision-making.</p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Keahlian</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
-          <h5>SQL</h5>
-          <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
-        </div>
-        <div class="col-md-3">
-          <h5>Laravel</h5>
-          <div class="progress"><div class="progress-bar bg-success" style="width: 75%;">75%</div></div>
-        </div>
-        <div class="col-md-3">
-          <h5>HTML/CSS</h5>
-          <div class="progress"><div class="progress-bar bg-info" style="width: 90%;">90%</div></div>
-        </div>
-        <div class="col-md-3">
-          <h5>R</h5>
-          <div class="progress"><div class="progress-bar bg-warning" style="width: 70%;">70%</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <!-- <ul class="navbar-nav flex-row d-md-none"> -->
+        <!-- <li class="nav-item text-nowrap"> -->
+        <!-- Toggle Button (Visible only on mobile) -->
+        <button class="btn btn-outline-secondary d-md-none m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Proyek</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 1">
-            <div class="card-body">
-              <h5 class="card-title">Analisis Data Penjualan</h5>
-              <p class="card-text">//description coming soon//</p>
+        <!-- Sidebar/Offcanvas -->
+        <div class="offcanvas offcanvas-start bg-body-tertiary d-md-flex" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+          <!-- Title (Hidden in md-up) -->
+          <div class="offcanvas-header d-md-none">
+            <h5 class="offcanvas-title text-success" id="sidebarMenuLabel">ARSTAM</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <!-- Sidebar Content -->
+          <div class="d-flex flex-column flex-shrink-0 p-0 vh-100 w-100">
+            <!-- Title for md and up -->
+            <h5 class="text-center text-success d-none d-md-block my-3">ARSTAM</h5>
+
+            <!-- Profile Picture -->
+            <img src="img/ppcircle.png" class="rounded-circle d-block mx-auto" height="120" alt="Profile" />
+
+            <!-- Social Media Icons -->
+            <div class="d-flex justify-content-center my-3 gap-2">
+              <a href="https://instagram.com" target="_blank">
+                <img src="img/ig.png" alt="Instagram" height="28px" />
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank">
+                <img src="img/whatsapp.png" alt="WhatsApp" height="28px" />
+              </a>
+              <a href="https://github.com/yourusername" target="_blank">
+                <img src="img/github.png" alt="GitHub" height="28px" />
+              </a>
+              <a href="https://facebook.com/yourusername" target="_blank">
+                <img src="img/fesnuk.png" alt="Facebook" height="28px" />
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                <img src="img/linkedin.png" alt="LinkedIn" height="28px" />
+              </a>
+            </div>
+
+            <hr class="my-2" />
+
+            <!-- Navigation Items -->
+            <div class="flex-grow-1 overflow-y-auto">
+              <ul class="nav flex-column text-center">
+                <li class="nav-item">
+                  <a class="nav-link py-2 text-black" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-2 text-black" href="#experiences">Experiences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-2 text-black" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-2 text-black" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyek 2">
-            <div class="card-body">
-              <h5 class="card-title">Website AWM TOUR</h5>
-              <p class="card-text">//description coming soon//</p>
+
+        <!-- CSS untuk mengatur tampilan di desktop -->
+        <style>
+          @media (min-width: 768px) {
+            .offcanvas.offcanvas-start.d-md-flex {
+              transform: none !important;
+              visibility: visible !important;
+              position: fixed !important;
+              top: 0 !important;
+              left: 0 !important;
+              width: 17% !important;
+              height: 100vh !important;
+              border-right: 1px solid rgba(0, 0, 0, 0.1);
+            }
+          }
+        </style>
+
+        <!-- Hero Section -->
+
+        <main id="home" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
+          <!-- <header class="bg-primary text-white text-center py-5">
+            <div class="container">
+              <h1 class="display-4">Halo, Saya Ahmad Riqas</h1>
+              <p class="lead">Fresh Graduate | Self-Taught SQL Beginner | Completed Mini SQL Project | Driven to Learn Data Analytics for Business Impact</p>
+            </div>
+          </header> -->
+
+          <!-- About Section -->
+          <div class="container">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-center">
+                <img src="img/Picture1.jpg" class="img-fluid justify-content-center" alt="mypic" />
+              </div>
+              <div class="col-6 my-auto">
+                <h2 class="mb-4">
+                  AHMAD RIQAS
+                  <br />
+                  <span class="text-success">DATA ANALYSIS</span> ENTHUSIAST
+                  <br />
+                  & <span class="text-success">WEB</span> DEVELOPER
+                </h2>
+                <p class="text-muted">
+                  Experienced as Math Lab Assistant at UIN Alauddin Makassar, web developer at PT. Al Ikhlas WIsata Mandiri Currently passionate about data analysis and business insights. Self-trained in SQL and have practiced using data
+                  querying to extract meaningful insights from mock datasets. Strong interest in data-driven decision-making.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </main>
+        <section id="experiences" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
+          <div class="container text-justify">
+            <h4 class="text-success fw-bold mb-4 text-center">EXPERIENCES</h4>
+
+            <div class="mb-4">
+              <h5 class="text-muted">March 2021 - December 2021</h5>
+              <p>Mathematics Student Association (HMJ MTK), UIN Alauddin Makassar.</p>
+              <ul class="text-normal nunito text-hitam">
+                <li>Member of the Islamic Study Center Division, which entrusted to facilitate students related to faith and piosity</li>
+              </ul>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="text-muted">August 2021 - July 2023</h5>
+              <p>Mathematics Laboratory Assistant, UIN Alauddin Makassar</p>
+              <ul class="text-normal nunito text-hitam">
+                <li>Maintaining laboratorium property</li>
+                <li>Supervising students during practical sessions</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
+          <div class="container text-justify">
+            <h4 class="text-success fw-bold mb-4 text-center">PROJECTS</h4>
+
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="img/proyek2.png" class="card-img-top" alt="Proyek 1" />
+                    <div class="card-body">
+                      <h5 class="card-title">Data Analysis Mini Course by RevoU</h5>
+                      <p class="card-text">//description coming soon//</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="img/proyek1.png" class="card-img-top" alt="Proyek 2" />
+                    <div class="card-body">
+                      <h5 class="card-title">Website AWM TOUR</h5>
+                      <p class="card-text">//description coming soon//</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
+          <div class="container text-justify">
+            <h4 class="text-success fw-bold mb-4 text-center">CONTACT</h4>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                  <a href="https://instagram.com" target="_blank">
+                    <img src="img/ig.png" alt="Instagram" height="50px" />
+                  </a>
+                  <a href="https://instagram.com" target="_blank">
+                    <img src="img/ig.png" alt="Instagram" height="50px" />
+                  </a>
+                  <a href="https://instagram.com" target="_blank">
+                    <img src="img/ig.png" alt="Instagram" height="50px" />
+                  </a>
+                  <a href="https://instagram.com" target="_blank">
+                    <img src="img/ig.png" alt="Instagram" height="50px" />
+                  </a>
+                  <a href="https://instagram.com" target="_blank">
+                    <img src="img/ig.png" alt="Instagram" height="50px" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Kontak</h2>
-      <p>Silakan hubungi saya melalui email: <strong>ahmadriqas99@gmail.com</strong> atau melalui LinkedIn.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <small>&copy; 2025 Ahmad Riqas. All rights reserved.</small>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
