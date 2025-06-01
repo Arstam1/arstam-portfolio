@@ -15,20 +15,17 @@
           <i class="bi bi-list"></i>
         </button>
 
-        <!-- Sidebar/Offcanvas -->
         <div class="offcanvas offcanvas-start bg-body-tertiary d-md-flex" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
           <div class="offcanvas-header d-md-none">
             <h5 class="offcanvas-title text-success" id="sidebarMenuLabel">ARSTAM</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
 
-          <!-- Sidebar Content -->
           <div class="d-flex flex-column flex-shrink-0 p-0 vh-100 w-100">
             <h5 class="text-center text-success d-none d-md-block my-3">ARSTAM</h5>
-            <!-- Profile Picture -->
+
             <img src="img/ppcircle.png" class="rounded-circle d-block mx-auto" height="120" alt="Profile" />
 
-            <!-- Social Media Icons -->
             <div class="d-flex justify-content-center my-3 gap-2">
               <a href="https://instagram.com/arstam1" target="_blank">
                 <img src="img/ig.png" alt="Instagram" height="28px" />
@@ -49,7 +46,6 @@
 
             <hr class="my-2" />
 
-            <!-- Navigation Items -->
             <div class="flex-grow-1 overflow-y-auto">
               <ul class="nav flex-column text-center">
                 <li class="nav-item">
@@ -70,20 +66,13 @@
         </div>
 
         <main id="home" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
-          <!-- <header class="bg-primary text-white text-center py-5">
-            <div class="container">
-              <h1 class="display-4">Halo, Saya Ahmad Riqas</h1>
-              <p class="lead">Fresh Graduate | Self-Taught SQL Beginner | Completed Mini SQL Project | Driven to Learn Data Analytics for Business Impact</p>
-            </div>
-          </header> -->
-
           <div class="container">
             <div class="row">
-              <div class="col-5 d-flex justify-content-center">
-                <img src="img/Picture1.jpg" class="img-fluid justify-content-center" alt="mypic" />
+              <div class="col-12 col-md-5 order-md-2 d-flex justify-content-center">
+                <img src="img/Picture1.jpg" class="img-fluid" alt="mypic" />
               </div>
-              <div class="col-6 my-auto">
-                <h1>
+              <div class="col-12 col-md-6 order-md-1 my-auto">
+                <h1 class="text-super-besar">
                   AHMAD RIQAS
                   <br />
                 </h1>
@@ -130,29 +119,28 @@
           </div>
         </section>
         <section id="projects" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
-          <div class="container text-justify">
+          <div class="container">
             <h4 class="text-success fw-bold mb-4 text-center">PROJECTS</h4>
-
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-md-4 mb-4">
-                  <div class="card">
-                    <img src="img/proyek2.png" class="card-img-top" alt="Proyek 1" />
-                    <div class="card-body">
-                      <h5 class="card-title">Sales Data Analytics Project</h5>
-                      <p class="card-text">A data analysis mini-project assigned by RevoU. The objective was to extract actionable insights by executing SQL queries against business datasets.</p>
-                      <a href="https://shorturl.at/W2DTc" class="btn btn-info">Preview</a>
-                    </div>
+            <div class="row justify-content-center">
+              <!-- Project 1 -->
+              <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                <div class="card h-100">
+                  <img src="img/proyek2.png" class="card-img-top img-fluid" alt="Sales Data Analytics Project" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Sales Data Analytics Project</h5>
+                    <p class="card-text flex-grow-1">A data analysis mini-project assigned by RevoU. The objective was to extract actionable insights by executing SQL queries against business datasets.</p>
+                    <a href="https://shorturl.at/W2DTc" class="btn btn-info align-self-start">Preview</a>
                   </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                  <div class="card">
-                    <img src="img/proyek1.png" class="card-img-top" alt="Proyek 2" />
-                    <div class="card-body">
-                      <h5 class="card-title">Web-Based Hajj & Umrah Management System</h5>
-                      <p class="card-text">This application was developed to streamline information access and operational data management for Islamic pilgrimage tourism businesses.</p>
-                      <a href="https://awmtour.com" class="btn btn-info">Preview</a>
-                    </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="col-lg-4 col-md-6 mb-4 d-flex">
+                <div class="card h-100">
+                  <img src="img/proyek1.png" class="card-img-top img-fluid" alt="Hajj & Umrah Management System" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">Web-Based Islamic Pilgrimage Service</h5>
+                    <p class="card-text flex-grow-1">This application was developed to streamline information access and operational data management for Islamic pilgrimage tourism businesses.</p>
+                    <a href="https://awmtour.com" class="btn btn-info align-self-start">Preview</a>
                   </div>
                 </div>
               </div>
@@ -160,41 +148,38 @@
           </div>
         </section>
         <section id="contact" class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
-          <div class="container text-justify">
+          <div class="container">
             <h4 class="text-success fw-bold mb-4 text-center">CONTACT</h4>
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="row row-cols-2 row-cols-lg-5 text-center">
-                  <div class="col">
-                    <a href="https://instagram.com/arstam1" target="_blank">
-                      <img src="img/ig.png" alt="Instagram" height="65px" />
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="https://wa.me/6285757245400" target="_blank">
-                      <img src="img/whatsapp.png" alt="WhatsApp" height="65px" />
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="https://github.com/Arstam1" target="_blank">
-                      <img src="img/github.png" alt="GitHub" height="65px" />
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="https://facebook.com/ahmadriqas" target="_blank">
-                      <img src="img/fesnuk.png" alt="Facebook" height="65px" />
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a href="https://linkedin.com/in/ahmad-riqas-869b0534a/" target="_blank">
-                      <img src="img/linkedin.png" alt="LinkedIn" height="65px" />
-                    </a>
-                  </div>
+
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                  <a href="https://instagram.com/arstam1" target="_blank" class="social-icon">
+                    <img src="img/ig.png" alt="Instagram" width="65" height="65" class="img-fluid" />
+                  </a>
+                  <a href="https://wa.me/6285757245400" target="_blank" class="social-icon">
+                    <img src="img/whatsapp.png" alt="WhatsApp" width="65" height="65" class="img-fluid" />
+                  </a>
+                  <a href="https://github.com/Arstam1" target="_blank" class="social-icon">
+                    <img src="img/github.png" alt="GitHub" width="65" height="65" class="img-fluid" />
+                  </a>
+                  <a href="https://facebook.com/ahmadriqas" target="_blank" class="social-icon">
+                    <img src="img/fesnuk.png" alt="Facebook" width="65" height="65" class="img-fluid" />
+                  </a>
+                  <a href="https://linkedin.com/in/ahmad-riqas-869b0534a/" target="_blank" class="social-icon">
+                    <img src="img/linkedin.png" alt="LinkedIn" width="65" height="65" class="img-fluid" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <footer class="bg-dark text-white text-center col-md-9 ms-sm-auto col-lg-10 px-md-4 py-3">
+          <div class="container">
+            <small>&copy; 2025 Ahmad Riqas. All rights reserved.</small>
+          </div>
+        </footer>
       </div>
     </div>
 
