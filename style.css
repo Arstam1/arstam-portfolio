@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Rubik+Bubbles&display=swap");
 
 @media (min-width: 768px) {
   .offcanvas.offcanvas-start.d-md-flex {
@@ -18,62 +17,20 @@
   font-family: "Barlow", sans-serif;
 } */
 
-/* Font */
-.barlow {
-  font-family: "Barlow", sans-serif;
-}
-
-.nunito {
-  font-family: "Nunito", sans-serif;
-}
-
 .text-super-besar {
   font-size: 60px;
 }
-.text-besar {
-  font-size: 50px;
-}
 
-.text-sedang {
-  font-size: 30px;
+.rubik-bubbles-regular {
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-
-.text-normal {
-  font-size: 18px;
-}
-
-.text-kecil {
-  font-size: 14px;
-}
-
-/*warna*/
-.text-hitam {
-  color: black;
-}
-
-.text-abu {
-  color: #b7b7b7;
-}
-
-.text-putih {
-  color: #ffffff;
-}
-
-.text-oren {
-  color: #ffac77;
-}
-
-.text-biru {
-  color: #71a8ff;
-}
-
-/* navbar */
 
 .nav-link {
   font-size: 18;
   font-weight: 500;
   margin: 0px 10 px;
-  color: white;
 }
 
 /* button */
