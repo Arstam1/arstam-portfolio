@@ -20,6 +20,9 @@
 .text-super-besar {
   font-size: 60px;
 }
+.text-putih {
+  color: #ffffff;
+}
 
 .rubik-bubbles-regular {
   font-family: "Rubik Bubbles", system-ui;
